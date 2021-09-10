@@ -183,8 +183,24 @@ overflow: hidden;
         }
       
     }
+    @include mq('med'){
+        .my-interests{
+            & ul{
+                & li{
+                    height: 100px;
+                }
+            }
+        }
+    }
     @include mq('exlg'){
         max-width: 1600px;
+        .my-interests{
+            & ul{
+                & li{
+                    height: 120px;
+                }
+            }
+        }
         & .title-about{
             & h2{
                 font-size:65px;
