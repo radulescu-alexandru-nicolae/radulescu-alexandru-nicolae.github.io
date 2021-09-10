@@ -1,0 +1,15 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    font-family: $font-stack-primary;
+    grid-template-rows: 75px repeat(2,1fr);
+    grid-template-columns:auto;
+    @include mq('sm') {
+        grid-template-areas: "nav" "header" "main" "footer";
+    }
+}
+
+body *{
+    box-sizing: border-box;
+}

@@ -1,0 +1,142 @@
+.skills{
+    color:white;
+    margin:auto;
+   width: 100%;
+    padding-bottom:100px;
+    background: #252A2E;
+    .container-skills-background{
+        width: 90%;
+        margin:auto;
+    }
+
+    & .first-container-skills{
+        @include flexy($dir:column,$just:center);
+        align-items: center;
+        margin-top:50px;
+    }
+    & svg{
+        fill:$color-green;
+        width: 80px;
+        height: 80px;
+    }
+
+    @include mq('med'){
+        .container-skills-background{
+            max-width: 1000px;
+    
+            }
+        & .title-sectiune{
+           & h2{
+               font-size:55px;
+           }
+        }
+    }
+
+    @include mq('exlg'){
+        .container-skills-background{
+        max-width: 1600px;
+
+        }
+        & .title-about{
+            & h2{
+                font-size:65px;
+            }
+         }
+        }
+        & ul{
+            padding:0;
+            list-style: none;
+            @include flexy($dir:column);
+
+            & li{
+                & p{
+                    font-size: 20px;
+                }
+                & .container-optiune{
+                    border-radius: 10px;
+                    background-color: black;
+                    height: 10px;
+                        & .optiune{
+                            background-color: $color-green;
+                            height: 100%;
+                            border-radius: 10px;
+                            position:relative;
+                            width:25%;
+                            transition:0.5s all ease-in-out;
+                            animation:var(--background);
+                            .container-span-li{
+                                position:absolute;
+                                left:95%;
+                               top:-21px;
+                                background-color: $color-green;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 100%;
+                               
+                                @include flexy($just:center);
+                                align-items: center;
+                                animation: var(--animation);
+                                & span{
+                                    margin-right: 10px;
+                                    position:relative;
+                                    &::after{
+                                        position:absolute;
+                                        content:'%';
+                                    }
+                                }
+                                
+                            }
+                        }
+                }
+            }
+          
+         
+        }
+
+        & h4{
+            font-size: 25px;
+            font-family: $font-stack-primary;
+        }
+     @include mq('lg'){
+    
+         .container-skills{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          column-gap: 40px;
+
+          & .container-optiune{
+              height: 20px;
+
+              & .optiune {
+                  & .container-span-li{
+                      top:-14px;
+                  }
+              }
+          }
+        }
+        
+        & h4{
+            font-size:35px;
+            font-family: $font-stack-primary;
+        }
+     }
+
+}
+
+@keyframes animatieBackground{
+    0%{
+        background-color: #1CB698;
+    }
+    25%{
+        background-color: #067c64;
+    }
+    50%{
+        background-color: #055848;
+    }
+    75%{
+        background-color: #067c64;
+    }
+    100%{
+        background-color: #1CB698;
+    }
+}

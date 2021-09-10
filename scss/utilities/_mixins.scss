@@ -1,0 +1,43 @@
+    @mixin flexy($disp:flex, $dir:null, $just:null, $wrap:null) {
+        display: $disp;
+        flex-direction: $dir;
+        justify-content: $just;
+        flex-wrap: $wrap;
+    }
+    
+    @mixin mq($break) {
+        $value: map-get($breakpoints, $break);
+        $sm: map-get($breakpoints, 'sm');
+        @if($value==null) {
+            @error "`{$break} is not a valid breakpoint";
+        }
+        @else if $value<$sm {
+            @media(max-width: $value) {
+                @content;
+            }
+        }
+        @else {
+            @media(min-width: $value) {
+                @content;
+            }
+        }
+    }
+    
+    @mixin pulse($start, $midle, $finish, $delay) {
+        @keyframes pulse {
+            0% {
+                transform: scale($start);
+                opacity: 0
+            }
+            50% {
+                transform: scale($midle);
+                opacity: 0.2;
+            }
+            100% {
+                transform: scale($finish);
+                opacity: 0;
+            }
+        }
+        animation: pulse 1.5s linear infinite;
+        animation-delay: $delay;
+    }

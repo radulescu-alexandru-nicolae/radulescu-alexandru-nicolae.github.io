@@ -1,0 +1,86 @@
+footer{
+    grid-area:footer;
+    background-color: $background;
+    padding-bottom: 50px;
+
+    & .first-container-footer{
+        @include flexy($dir:column,$just:center);
+        align-items: center;
+        margin-top:50px;
+
+        & i{
+            font-size:80px;
+            color:$color-green;
+        }
+        & .title-footer{
+            color:white;
+        }
+    }
+    form{
+        width: 95%;
+        margin:auto;
+        @include flexy($dir:column);
+        row-gap: 20px;
+    }
+    & input{
+        background-color: #252A2E;
+        border: 0px solid #D2D2D2;
+        border-radius: 5px;
+        height: 50px;
+        padding: 18px;
+        line-height: 50px;
+        box-shadow: 0px 18px 18px 0 rgb(0 0 0 / 20%);
+        font-size: 15px;
+        color: #FFF;
+        letter-spacing: 0.5px;
+        width: 100%;
+      
+    }
+    & textarea{
+        background-color: #252A2E;
+    border: 0px solid #D2D2D2;
+    border-radius: 5px;
+    height: 150px;
+    padding: 18px;
+    line-height: 20px;
+    box-shadow: 0px 18px 18px 0 rgb(0 0 0 / 20%);
+    font-size: 15px;
+    width: 100%;
+    color: #FFF;
+    letter-spacing: 0.5px;
+    }
+    button{
+        font-size: 16px;
+        color: #FFF;
+        letter-spacing: 0.8px;
+        font-weight: 500;
+        background-color: transparent;
+        display: inline-block;
+        border-radius: 0px;
+        padding: 10px 22px;
+        position: relative;
+        border: 1px solid #FFF;
+        max-width: 200px;
+        border-radius: 2px;
+        @include flexy($dir:row);
+        column-gap: 10px;
+        transition:0.5s all ease-in-out;
+    }
+    button:hover{
+        background-color: $color-green;
+
+    }
+    ::-webkit-input-placeholder { /* Edge */
+        color: white;
+      }
+      @include mq('med'){
+          form{
+              max-width: 600px;
+          }
+      }
+      @include mq('lg'){
+          form{
+              max-width: 1600px;
+          }
+      }
+}

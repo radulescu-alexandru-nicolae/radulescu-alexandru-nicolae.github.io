@@ -1,0 +1,15 @@
+header {
+    grid-area: header;
+    background: url(/img/top_sider_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 900px;
+    position: relative;
+    z-index: 1;
+    @include flexy();
+    align-items: center;
+    padding-top:100px;
+
+ 
+}

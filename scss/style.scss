@@ -1,0 +1,18 @@
+@import 'utilities/variables',
+'utilities/mixins';
+//base styles
+@import 'base/reset',
+'base/base';
+//layout
+@import 'layout/_header';
+@import 'layout/_main';
+@import 'layout/_nav';
+@import 'layout/footer';
+//compontents
+@import 'components/meniu';
+@import 'components/profile';
+@import 'components/about';
+@import 'components/title-sectiune';
+@import 'components/skills';
+@import 'components/resume';
+@import 'components/projects'

@@ -1,0 +1,31 @@
+ .title-sectiune{
+    text-align: center;
+    padding-bottom: 50px;
+    transform:translateY(-100%);
+    opacity:0;
+    transition:0.5s all ease-in-out;
+    animation:bounce 2s 0.5s;
+  & h2{
+    font-size: 45px;
+    height: 100%;
+    height: 15px;
+  }
+
+    max-width: 400px;
+    position:relative;
+    @include flexy($dir:column);
+    align-items: center;
+    row-gap:8px;
+    & span{
+        display: block;
+        height: 2px;
+        background-color: $color-green;
+
+    }
+    & span:nth-child(2){
+        width: 50%;
+    }& span:nth-child(3){
+        width: 30%;
+    }
+ 
+}

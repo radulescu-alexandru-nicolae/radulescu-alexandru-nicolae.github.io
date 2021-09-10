@@ -1,0 +1,38 @@
+.meniu {
+    width: 45px;
+    height: 45px;
+    background-color: $color-green;
+    border-radius: 10px;
+    z-index: 2;
+    .container-span {
+        height: 100%;
+        width: 100%;
+        @include flexy($just: center, $dir: column);
+        row-gap: 5px;
+        align-items: center;
+        & span {
+            position: relative;
+            width: 50%;
+            background-color: white;
+            height: 3px;
+            display: block;
+            transform-origin: right;
+        }
+        & span:nth-child(1) {
+            transform: skewY(var(--first-span));
+            transition: 0.5s all ease-in-out;
+        }
+        & span:nth-child(3) {
+            transform: skewY(var(--second-span));
+            transition: 0.5s all ease-in-out;
+        }
+        & span:nth-child(2) {
+            opacity: 1;
+            opacity: var(--opacity-span);
+            transition: 0.5s all ease-in-out;
+        }
+    }
+    @include mq('med') {
+        display: none;
+    }
+}

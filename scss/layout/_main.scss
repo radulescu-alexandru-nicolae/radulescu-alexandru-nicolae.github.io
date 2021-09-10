@@ -1,0 +1,8 @@
+main{
+    grid-area:main;
+    padding-top:100px;
+    background-color: $background;
+    @include flexy($dir:column);
+    row-gap: 100px;
+
+}
