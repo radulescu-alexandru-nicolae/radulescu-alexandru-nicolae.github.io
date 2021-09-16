@@ -34,6 +34,8 @@ const personal_interests=document.querySelector('.personal-interests');
 const title_footer=document.querySelector('.title-footer');
 const title_skills=document.querySelector('.title-skills');
 const title_resume=document.querySelector('.title-resume');
+
+
 window.addEventListener('scroll',function(){
     if (window.matchMedia("(max-width: 720px)").matches) {
        if(window.scrollY>800 &&window.scrollY <900){
@@ -159,7 +161,11 @@ window.addEventListener('scroll',function(){
     }
 })
 
-
+const about=document.querySelector('.about');
+console.log(about);
+about.addEventListener('scroll',function(){
+    alert('a');
+})
 
 //animation counting
 const counters = document.querySelectorAll('.counter');

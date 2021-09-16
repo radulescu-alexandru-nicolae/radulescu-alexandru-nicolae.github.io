@@ -1012,7 +1012,7 @@ footer ::-webkit-input-placeholder {
   transform: translateY(-100%);
   opacity: 0;
   transition: 0.5s all ease-in-out;
-  animation: bounce 2s 0.5s;
+  animation: bounce 2s 0.5s both;
   max-width: 400px;
   position: relative;
   display: flex;
@@ -1277,6 +1277,7 @@ footer ::-webkit-input-placeholder {
 }
 @media (min-width: 1024px) {
   .resume .education-experience {
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
