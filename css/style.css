@@ -961,7 +961,8 @@ footer ::-webkit-input-placeholder {
     max-width: 1600px;
   }
   .about .my-interests ul li {
-    height: 120px;
+    height: 150px;
+    width: 150px;
   }
   .about .title-about h2 {
     font-size: 65px;
@@ -1012,7 +1013,6 @@ footer ::-webkit-input-placeholder {
   transform: translateY(-100%);
   opacity: 0;
   transition: 0.5s all ease-in-out;
-  animation: bounce 2s 0.5s both;
   max-width: 400px;
   position: relative;
   display: flex;
