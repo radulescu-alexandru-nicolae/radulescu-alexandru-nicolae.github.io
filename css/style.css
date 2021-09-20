@@ -428,7 +428,7 @@ nav .container-nav ul li {
   border-bottom: 1px solid white;
   padding: 10px 0px 10px 0px;
 }
-nav .container-nav ul a {
+nav .container-nav ul p {
   text-decoration: none;
   font-size: 18px;
   font-family: unset;
@@ -436,6 +436,7 @@ nav .container-nav ul a {
   color: white;
   margin-left: 15px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 @media (min-width: 800px) {
   nav .container-nav {
@@ -460,10 +461,10 @@ nav .container-nav ul a {
     display: flex;
     align-items: center;
   }
-  nav .container-nav ul li a {
+  nav .container-nav ul li p {
     position: relative;
   }
-  nav .container-nav ul li a::after {
+  nav .container-nav ul li p::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -473,25 +474,25 @@ nav .container-nav ul a {
     overflow: hidden;
     text-transform: uppercase;
   }
-  nav .container-nav ul li:nth-child(1) a::after {
+  nav .container-nav ul li:nth-child(1) p::after {
     content: "home";
   }
-  nav .container-nav ul li:nth-child(2) a::after {
+  nav .container-nav ul li:nth-child(2) p::after {
     content: "about";
   }
-  nav .container-nav ul li:nth-child(3) a::after {
+  nav .container-nav ul li:nth-child(3) p::after {
     content: "skills";
   }
-  nav .container-nav ul li:nth-child(4) a::after {
+  nav .container-nav ul li:nth-child(4) p::after {
     content: "resume";
   }
-  nav .container-nav ul li:nth-child(5) a::after {
+  nav .container-nav ul li:nth-child(5) p::after {
     content: "projects";
   }
-  nav .container-nav ul li:nth-child(6) a::after {
+  nav .container-nav ul li:nth-child(6) p::after {
     content: "contact";
   }
-  nav .container-nav ul li a:hover::after {
+  nav .container-nav ul li p:hover::after {
     width: 100%;
   }
 }

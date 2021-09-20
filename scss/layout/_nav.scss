@@ -39,11 +39,12 @@ nav {
             overflow: hidden;
             z-index: 2;
             transition: 0.5s all ease-in-out;
+
             & li {
                 border-bottom: 1px solid white;
                 padding: 10px 0px 10px 0px;
             }
-            & a {
+            & p {
                 text-decoration: none;
                 font-size: 18px;
                 font-family: unset;
@@ -51,6 +52,7 @@ nav {
                 color: white;
                 margin-left: 15px;
                 text-transform: uppercase;
+                cursor: pointer;
             }
         }
     }
@@ -72,10 +74,10 @@ nav {
                     border: unset;
                     @include flexy();
                     align-items: center;
-                    & a {
+                    & p {
                         position: relative;
                     }
-                    & a::after {
+                    & p::after {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -86,25 +88,25 @@ nav {
                         text-transform: uppercase;
                     }
                 }
-                & li:nth-child(1) a::after {
+                & li:nth-child(1) p::after {
                     content: 'home';
                 }
-                li:nth-child(2) a::after {
+                li:nth-child(2) p::after {
                     content: 'about';
                 }
-                li:nth-child(3) a::after {
+                li:nth-child(3) p::after {
                     content: 'skills';
                 }
-                li:nth-child(4) a::after {
+                li:nth-child(4) p::after {
                     content: 'resume';
                 }
-                li:nth-child(5) a::after {
+                li:nth-child(5) p::after {
                     content: 'projects';
                 }
-                li:nth-child(6) a::after {
+                li:nth-child(6) p::after {
                     content: 'contact';
                 }
-                & li a:hover::after {
+                & li p:hover::after {
                     width: 100%;
                 }
             }
