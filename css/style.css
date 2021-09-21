@@ -961,9 +961,15 @@ footer ::-webkit-input-placeholder {
   .about {
     max-width: 1600px;
   }
+  .about .my-interests ul {
+    min-width: 100%;
+  }
   .about .my-interests ul li {
     height: 150px;
-    width: 150px;
+    width: 300px;
+  }
+  .about .my-interests ul li i {
+    padding-top: 20px;
   }
   .about .title-about h2 {
     font-size: 65px;
