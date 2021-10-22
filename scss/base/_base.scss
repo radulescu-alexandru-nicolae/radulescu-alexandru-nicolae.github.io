@@ -5,6 +5,7 @@ body {
     font-family: $font-stack-primary;
     grid-template-rows: 75px repeat(2,1fr);
     grid-template-columns:auto;
+    background-color: #1E2326;
     @include mq('sm') {
         grid-template-areas: "nav" "header" "main" "footer";
     }

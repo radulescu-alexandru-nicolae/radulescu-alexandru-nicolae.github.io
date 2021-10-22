@@ -344,6 +344,7 @@ body {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   grid-template-rows: 75px repeat(2, 1fr);
   grid-template-columns: auto;
+  background-color: #1E2326;
 }
 @media (min-width: 100px) {
   body {
