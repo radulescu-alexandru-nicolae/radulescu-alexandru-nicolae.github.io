@@ -339,7 +339,6 @@ export default class Main{
         const skill=document.querySelector('.skills');
         const resume=document.querySelector('.resume')
         const project=document.querySelector('.projects');
-        const contact=document.querySelector('.contact');
 
         const counters=document.querySelectorAll('.counter');
         const values=[];
@@ -364,7 +363,6 @@ export default class Main{
             counterF(12);
             animatie(5);
             const tilte_skil=document.querySelector('.title-skills');
-            console.log(tilte_skil);
             tilte_skil.style.transform="translateY(0px)";
             tilte_skil.style.opacity="1"
             title_animation(skill);
@@ -400,12 +398,7 @@ animatie_resume_elemente();
             title_animation(project);
         }
 
-function contactAnimation(){
-    const title_footer=document.querySelector('.title-footer');
-    title_footer.style.transform="translateY(0px)";
-    title_footer.style.opacity="1";
-    title_animation(contact);
-}
+
 
 
 
@@ -476,9 +469,10 @@ function contactAnimation(){
         }else if(window.scrollY>=project.offsetTop-180&&window.scrollY<=project.offsetTop){
 
             projectAnimation();
-        }else if(window.scrollY>=contact.offsetTop-180&&window.scrollY<=contact.offsetTop){
-            contactAnimation();
         }
+        // else if(window.scrollY>=contact.offsetTop-180&&window.scrollY<=contact.offsetTop){
+        //     contactAnimation();
+        // }
     
     
     });

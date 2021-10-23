@@ -3,7 +3,7 @@ export default class Nav{
 
         this.container=document.querySelector('.container');
         this.setNav();
-        this.navScroll();
+        // this.navScroll();
         this.meniu();
     }
     setNav=()=>{
@@ -32,36 +32,41 @@ export default class Nav{
        this.container.appendChild(nav);
 
     }
-    scrollToElement=(element)=>{
-        window.scrollTo({
-            top: element.offsetTop-80, behavior: 'smooth'
-        })
-    }
-    navScroll=()=>{
-        const nav=document.querySelector('nav');
-const about=document.querySelector('.about');
-const skill=document.querySelector('.skills');
-const resume=document.querySelector('.resume');
-const project=document.querySelector('.projects');
-const contact=document.querySelector('.contact');
-nav.addEventListener('click',(e)=>{
-   if(e.target.textContent==='Home'){
-    window.scrollTo({
-        top: 0, behavior: 'smooth'
-    })
-   }else if(e.target.textContent==='About'){
-       this.scrollToElement(about);
-   }else if(e.target.textContent==='Skills'){
-    this.scrollToElement(skill);
-   }else if(e.target.textContent==='Resume'){
-    this.scrollToElement(resume);
-   }else if(e.target.textContent==='Projects'){
-    this.scrollToElement(project);
-   }else if(e.target.textContent==='Contact'){
-    this.scrollToElement(contact);
-   }
-})
-    }
+ 
+//     navScroll=()=>{
+// const nav=document.querySelector('nav');
+// const about=document.querySelector('.about');
+// const skill=document.querySelector('.skills');
+// const resume=document.querySelector('.resume');
+// const project=document.querySelector('.projects');
+// const contact=document.querySelector('.contact');
+// nav.addEventListener('click',(e)=>{
+//    if(e.target.textContent==='Home'){
+//     window.scrollTo({
+//         top: 0, behavior: 'smooth'
+//     })
+//    }else if(e.target.textContent==='About'){
+//        scrollToElement(about);
+//    }else if(e.target.textContent==='Skills'){
+//     scrollToElement(skill);
+//    }else if(e.target.textContent==='Resume'){
+//     scrollToElement(resume);
+//    }else if(e.target.textContent==='Projects'){
+//     scrollToElement(project);
+//    }else if(e.target.textContent==='Contact'){
+//     scrollToElement(contact);
+//    }
+// })
+
+
+// function scrollToElement(element){
+//     console.log(element);
+//     window.scrollTo({
+//         top: element.offsetTop-80, behavior: 'smooth'
+//     })
+// }
+
+//     }
     meniu=()=>{
         const meniu = document.querySelector('.meniu');
 const span = meniu.querySelectorAll('span');
