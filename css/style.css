@@ -368,6 +368,7 @@ header {
   display: flex;
   align-items: center;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 main {
@@ -630,6 +631,7 @@ footer ::-webkit-input-placeholder {
 }
 
 .profile {
+  padding-top: 50px;
   width: 90%;
   margin: auto;
   background: #252A2E;
@@ -1314,6 +1316,39 @@ footer ::-webkit-input-placeholder {
 .projects {
   padding-bottom: 50px;
   background: #252A2E;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.projects .project-type {
+  width: 95%;
+  margin: auto;
+}
+.projects .project-type ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.projects .project-type ul li {
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1CB698;
+  transition: 0.5s all ease-in-out;
+}
+.projects .project-type ul li:hover {
+  color: #1CB698;
+  background-color: #252A2E;
+  border: 1px solid #1CB698;
 }
 .projects .first-container-projects {
   display: flex;
@@ -1384,12 +1419,22 @@ footer ::-webkit-input-placeholder {
   border-radius: 10px;
 }
 @media (min-width: 800px) {
+  .projects .project-type {
+    width: 70%;
+    margin: auto;
+  }
+  .projects .project-type ul li {
+    width: 33%;
+  }
   .projects .container-projects .project {
     width: 70%;
     margin: auto;
   }
 }
 @media (min-width: 1024px) {
+  .projects .project-type {
+    max-width: 1600px;
+  }
   .projects .container-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -1,6 +1,37 @@
 .projects{
     padding-bottom: 50px;
     background: #252A2E;
+    @include flexy($dir:column);
+    row-gap: 30px;
+
+& .project-type{
+    width: 95%;
+    margin:auto;
+    & ul{
+        text-align: center;
+        list-style: none;
+        @include flexy($dir:row,$just:center,$wrap:wrap);
+        column-gap: 40px;;
+        row-gap: 30px;
+   
+        padding:0;
+        margin:0;
+        & li{
+            cursor: pointer;
+            color:white;
+          font-size: 25px;
+          padding:10px;
+          border-radius: 10px;
+          background-color: $color-green;
+          transition:0.5s all ease-in-out;
+          &:hover{
+              color:$color-green;
+              background-color: #252A2E;
+              border:1px solid $color-green;
+          }
+        }
+    }
+ }
     & .first-container-projects{
         @include flexy($dir:column,$just:center);
         align-items: center;
@@ -69,6 +100,15 @@
         border-radius:10px;
     }
    @include mq('med'){
+    & .project-type{
+        width: 70%;
+        margin:auto;
+        & ul {
+            li{
+                width: 33%;
+            }
+        }
+    }
         & .container-projects{
 
             & .project{
@@ -78,6 +118,9 @@
         }
    }
    @include mq('lg'){
+       & .project-type{
+        max-width: 1600px;
+       }
         & .container-projects{
             display: grid;
             grid-template-columns: repeat(2,1fr);
