@@ -22,10 +22,10 @@ export default class Header{
             <p>Full stack web developer</p>
         </article>
         <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></i></a></i>
+            <li><a href="https://www.facebook.com/Alexandru432/" target="_blank"><i class="fab fa-facebook-f"></i></i></a></i>
             </li>
-            <li><a href=""><i class="fab fa-github"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/radulescu-alexandru-nicolae" target="_blank"><i class="fab fa-github"></i></a></li>
+            
             <li><a href=""><i class="fab fa-skype"></i></a></li>
         </ul>
     </section>

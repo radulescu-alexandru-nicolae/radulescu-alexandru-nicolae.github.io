@@ -18,7 +18,10 @@ export default class Main{
             <span></span>
         </article>
         <article class="description">
-            <p><strong>Hello!I'm Andu.</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias voluptatibus similique quam itaque facere dolor dicta maiores, error perspiciatis obcaecati autem, incidunt inventore iste! Accusantium nostrum recusandae numquam odit doloremque!</p>
+            <p><strong>Hello!My name is Radulescu Alexandru</strong> and currently I'm student in the third year at
+            Calculatoare,Automatica si Informatica Aplicata from Craiova.I'm an oppen
+            minde persona who is eager to learn new things and develope new skills.
+            </p>
         </article>
         <article class="personal-interests">
           <article class="personal-details">
@@ -74,7 +77,7 @@ export default class Main{
             </ul>
         </article>  
         </article>
-    <a href="">
+    <a href="/cv/CV.pdf" download="CV">
         <p>Download CV</p>
         <i class="fas fa-download"></i>
     </a>
@@ -212,9 +215,10 @@ export default class Main{
             <article class="container-education">
                 <div class="element-education element_educ_exp">
                     <div class="description">
-                        <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
-                        <p><strong>2019-2024</strong></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus velit hic deserunt natus nemo laudantium accusamus animi voluptatem, perferendis voluptas! Minus fuga debitis temporibus, iusto voluptatum laudantium nobis molestiae.</p>
+                        <h4>Liceul teoretic <strong>Henri Coanda</strong></h4>
+                        <p><strong>2015-2019</strong></p>
+                        <p>
+                        I studied the bio-chemistry profile and I managed to take the baccalaureate exam successfully. Here I learned how to work in a team and how to interact with other people.  </p>
                     </div>
                     <span></span>       
                 </div>
@@ -222,8 +226,8 @@ export default class Main{
                 <div class="description">
                     <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
                     <p><strong>2019-2024</strong></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus velit hic deserunt natus nemo laudantium accusamus animi voluptatem, perferendis voluptas! Minus fuga debitis temporibus, iusto voluptatum laudantium nobis molestiae.</p>
-                </div>
+                    <p>I'm still a studente here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domeni.
+                    </div>
                 <span></span>  
             </div>
              </article>
@@ -238,7 +242,8 @@ export default class Main{
                     <div class="description">
                         <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
                         <p><strong>2019-2024</strong></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus velit hic deserunt natus nemo laudantium accusamus animi voluptatem, perferendis voluptas! Minus fuga debitis temporibus, iusto voluptatum laudantium nobis molestiae.</p>
+                        <p>I'm still a student here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domeni.
+                        </p>
                     </div>
                     <span></span>  
                 </div>
@@ -277,87 +282,69 @@ export default class Main{
 <section class="container-projects">
 
     <article class="project front">
-        <a href="">
-                <img src="img/DashBoard.PNG" alt="">
+    <img src="img/taramul-zanelor.png" alt="">
         </a>
         <div class="overlay">
+        <a class="redirect" href="https://radulescu-alexandru-nicolae.github.io/taramul-zanelor-mockup/">
+        <i class="fas fa-directions"></i>
+        </a>
+        <i class="fas fa-search"></i>
+        </a>
+           
+            <h3>Taramul Zanelor</h3>
+             <p>A basic website for a kindergarten </p>      
+        </div>
+
+    </article>
+    <article class="project front">
+        <img src="/img/EcomerceImg.png" alt="">
+        <div class="overlay">
+  <a class="redirect" href="https://github.com/radulescu-alexandru-nicolae/shop-online-mockup">
+  <i class="fas fa-directions"></i></a>
+
             <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
+            <h3>EComerce</h3>
+             <p>Front End part for an EComerce website wher I used API</p>      
         </div>
 
     </article>
     <article class="project front">
         <a href="">
-                <img src="img/DashBoard.PNG" alt="">
+        <img src="img/DashBoard.PNG" alt="">
         </a>
         <div class="overlay">
             <i class="fas fa-search"></i>
+       <a class="redirect" href="https://radulescu-alexandru-nicolae.github.io/dashboard-sass/">
+       <i class="fas fa-directions"></i></a>
             <h3>Project Name</h3>
              <p>Description</p>      
         </div>
 
     </article>
-    <article class="project full">
-        <a href="">
-                <img src="img/Movie.PNG" alt="">
-        </a>
-        <div class="overlay">
-            <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
-        </div>
+ 
 
-    </article>
-    <article class="project full">
-        <a href="">
-                <img src="img/Frizerie.PNG" alt="">
-        </a>
+    <article class="project backend">
+                <img src="img/backend-for-article-2.jpg" alt="">
         <div class="overlay">
-            <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
-        </div>
+        <a class="redirect" href="https://github.com/radulescu-alexandru-nicolae/cinematograf">
+        <i class="fas fa-directions"></i>
+        </a>
 
-    </article>
-    <article class="project full">
-        <a href="">
-                <img src="img/Movie.PNG" alt="">
-        </a>
-        <div class="overlay">
             <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
+            <h3>Cinema
+            </h3>
+             <p>A back-end version for cinema where you can buy tickets and reserve seats.</p>      
         </div>
     </article>
     <article class="project backend">
-        <a href="">
                 <img src="img/backend-for-article-2.jpg" alt="">
-        </a>
         <div class="overlay">
+        <a class="redirect" href="https://github.com/radulescu-alexandru-nicolae/firma-curierat">
+        <i class="fas fa-directions"></i></a>
+
             <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
-        </div>
-    </article>
-    <article class="project backend">
-        <a href="">
-                <img src="img/backend-for-article-2.jpg" alt="">
-        </a>
-        <div class="overlay">
-            <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
-        </div>
-    </article>
-    <article class="project backend">
-        <a href="">
-                <img src="img/backend-for-article-2.jpg" alt="">
-        </a>
-        <div class="overlay">
-            <i class="fas fa-search"></i>
-            <h3>Project Name</h3>
-             <p>Description</p>      
+            <h3>Curier Company</h3>
+             <p>A prjoect where I tried to simulate how back-end from a Curier Company works</p>      
         </div>
     </article>
 </section>

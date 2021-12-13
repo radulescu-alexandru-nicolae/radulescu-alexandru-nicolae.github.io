@@ -74,6 +74,8 @@
         }
         & .element-education{
             border-right: 2px solid $color-green;
+            max-height: 200px;
+            min-height: 200px;
 
             & span{
                 display: block;
