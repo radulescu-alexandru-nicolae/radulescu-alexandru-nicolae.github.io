@@ -321,7 +321,19 @@ export default class Main{
         </div>
 
     </article>
- 
+    <article class="project backend">
+    <img src="img/backend-for-article-2.jpg" alt="">
+<div class="overlay">
+<a class="redirect" href="https://github.com/radulescu-alexandru-nicolae/online-school">
+<i class="fas fa-directions"></i>
+</a>
+
+<i class="fas fa-search"></i>
+<h3>School Cours
+</h3>
+ <p>A back-end version for a school website where you could enrol in diferent courses.</p>      
+</div>
+</article>
 
     <article class="project backend">
                 <img src="img/backend-for-article-2.jpg" alt="">
@@ -336,6 +348,7 @@ export default class Main{
              <p>A back-end version for cinema where you can buy tickets and reserve seats.</p>      
         </div>
     </article>
+   
     <article class="project backend">
                 <img src="img/backend-for-article-2.jpg" alt="">
         <div class="overlay">
