@@ -1318,7 +1318,7 @@ footer ::-webkit-input-placeholder {
 @media(max-width:700px){
 .resume .element_educ_exp{
   min-height: 300px;;
-   border:1px solid red;
+  
 
 }
 }
