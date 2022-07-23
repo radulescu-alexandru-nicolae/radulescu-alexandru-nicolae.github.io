@@ -1236,6 +1236,7 @@ footer ::-webkit-input-placeholder {
 .resume .educ_exp .element_educ_exp .description {
   padding-left: 25px;
   padding-right: 25px;
+
 }
 .resume .educ_exp .element_educ_exp .description strong {
   color: #1CB698;
@@ -1294,6 +1295,8 @@ footer ::-webkit-input-placeholder {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     max-width: 1600px;
+
+    
   }
   .resume .education-experience .element-experience span::after {
     right: 80%;
@@ -1309,7 +1312,14 @@ footer ::-webkit-input-placeholder {
   transition: 0.5s all ease-in-out;
   transform: translateY(100%);
   opacity: 0;
+
   z-index: -1;
+}
+@media(max-width:700px){
+.resume .element_educ_exp{
+  min-height: 300px;;
+
+}
 }
 .resume .element_educ_exp:nth-child(2) {
   transition-delay: 0.5s;
