@@ -20,7 +20,7 @@ export default class Main{
         <article class="description">
             <p><strong>Hello!My name is Radulescu Alexandru</strong> and currently I'm student in the third year at
             Calculatoare,Automatica si Informatica Aplicata from Craiova.I'm an oppen
-            minde persona who is eager to learn new things and develope new skills.
+            mind persona who is eager to learn new things and develope new skills.
             </p>
         </article>
         <article class="personal-interests">
@@ -141,6 +141,16 @@ export default class Main{
                                 </article>
                             </article>
                         </li>
+                        <li>
+                        <p>Spring</p>
+                        <article class="container-optiune">
+                            <article class="spring optiune">
+                                <div class="container-span-li">
+                                    <span class="counter" target="40">0</span>
+                                </div>
+                            </article>
+                        </article>
+                    </li>
                     </ul>
 
                 </section>
@@ -194,11 +204,6 @@ export default class Main{
             </article>
         </div>
     </section>
-
-
-
-
-
 <section class="resume">
 <article class="first-container-resume">
     <i class="fas fa-file"></i>
@@ -224,9 +229,9 @@ export default class Main{
                 </div>
             <div class="element-education element_educ_exp">
                 <div class="description">
-                    <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
-                    <p><strong>2019-2024</strong></p>
-                    <p>I'm still a studente here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domeni.
+                    <h4>Automatica si Informatica Aplicata la <strong>UCV University</strong></h4>
+                    <p><strong>2019-2023</strong></p>
+                    <p>I'm still a studente here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domein.
                     </div>
                 <span></span>  
             </div>
@@ -240,9 +245,9 @@ export default class Main{
             <article class="container-experience">
                 <div class="element-experience element_educ_exp">
                     <div class="description">
-                        <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
-                        <p><strong>2019-2024</strong></p>
-                        <p>I'm still a student here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domeni.
+                        <h4>Back-end developer at <strong>BRD</strong></h4>
+                        <p><strong>01/03/2022 - Current</strong></p>
+                        <p>I'm working as a backend developer at BRD where I use <strong>Java</strong> and <strong>Spring</strong> for creating microservices.I learned at a minimum level how to work with <strong>Jenkins</strong> and <strong>OpenShift</strong>
                         </p>
                     </div>
                     <span></span>  
@@ -250,9 +255,9 @@ export default class Main{
 
                 <div class="element-experience element_educ_exp">
                     <div class="description">
-                        <h4>Automation and Appied Informatic at <strong>UCV University</strong></h4>
-                        <p><strong>2019-2024</strong></p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, possimus velit hic deserunt natus nemo laudantium accusamus animi voluptatem, perferendis voluptas! Minus fuga debitis temporibus, iusto voluptatum laudantium nobis molestiae.</p>
+                        <h4>Intership at <strong>OSF Digital</strong></h4>
+                        <p><strong>2021 - 1 month</strong></p>
+                        <p>I participated in a one-month internship at OSF where I worked with <strong>NodeJs</strong> , <strong>HTML</strong>,<strong>CSS</strong>,<strong>JavaScript</strong> for creating a basic EComerce website.</p>
                     </div>
                     <span></span>  
                 </div>
@@ -275,7 +280,7 @@ export default class Main{
 <ul>
 <li>Front-End</li>
 <li>Back-End</li>
-<li>Full Stack</li>
+<li>All</li>
 </ul>
 
 </section>
@@ -303,8 +308,10 @@ export default class Main{
   <i class="fas fa-directions"></i></a>
 
             <i class="fas fa-search"></i>
-            <h3>EComerce</h3>
-             <p>Front End part for an EComerce website wher I used API</p>      
+          <div class="info"> 
+          <h3>EComerce</h3>
+          <p>Front End part for an EComerce website wher I used API</p>      
+          </div>
         </div>
 
     </article>
@@ -329,9 +336,11 @@ export default class Main{
 </a>
 
 <i class="fas fa-search"></i>
+<div class="info">
 <h3>School Cours
 </h3>
- <p>A back-end version for a school website where you could enrol in diferent courses.</p>      
+ <p>A back-end version for a school website where you could enrol in diferent courses.</p>     
+</div>
 </div>
 </article>
 
@@ -343,9 +352,11 @@ export default class Main{
         </a>
 
             <i class="fas fa-search"></i>
-            <h3>Cinema
-            </h3>
-             <p>A back-end version for cinema where you can buy tickets and reserve seats.</p>      
+            <div class="info"> <h3>Cinema</h3>
+            <p>A back-end version for cinema where you can buy tickets and reserve seats.</p>      
+            
+            </div>
+           
         </div>
     </article>
    
@@ -356,8 +367,9 @@ export default class Main{
         <i class="fas fa-directions"></i></a>
 
             <i class="fas fa-search"></i>
+            <div class="info"> 
             <h3>Curier Company</h3>
-             <p>A prjoect where I tried to simulate how back-end from a Curier Company works</p>      
+             <p>A prjoect where I tried to simulate how back-end from a Curier Company works</p>   </div>  
         </div>
     </article>
 </section>
@@ -381,10 +393,10 @@ export default class Main{
                   this.setBackround(e.target); 
                   this.displayOn();
                   this.displayProject('front');
-                }else if(text==='Full Stack'){
+                }else if(text==='All'){
                   this.setBackround(e.target);
                   this.displayOn();
-                  this.displayProject('full');
+                  this.displayProject('project');
                 }
             }
         })

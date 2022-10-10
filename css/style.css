@@ -572,8 +572,7 @@ footer button {
 footer button:hover {
   background-color: #1CB698;
 }
-footer ::-webkit-input-placeholder {
-  /* Edge */
+footer ::-webkit-input-placeholder { /* Edge */
   color: white;
 }
 @media (min-width: 800px) {
@@ -581,7 +580,7 @@ footer ::-webkit-input-placeholder {
     max-width: 600px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   footer form {
     max-width: 1600px;
   }
@@ -763,7 +762,7 @@ footer ::-webkit-input-placeholder {
   font-size: 25px;
   font-family: "Righteous", cursive;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .profile ul li a {
     font-size: 35px;
     width: 60px;
@@ -960,7 +959,7 @@ footer ::-webkit-input-placeholder {
     height: 100px;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1400px) {
   .about {
     max-width: 1600px;
   }
@@ -1078,7 +1077,7 @@ footer ::-webkit-input-placeholder {
     font-size: 55px;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1400px) {
   .skills .container-skills-background {
     max-width: 1600px;
   }
@@ -1134,7 +1133,7 @@ footer ::-webkit-input-placeholder {
   font-size: 25px;
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .skills .container-skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1236,7 +1235,6 @@ footer ::-webkit-input-placeholder {
 .resume .educ_exp .element_educ_exp .description {
   padding-left: 25px;
   padding-right: 25px;
-
 }
 .resume .educ_exp .element_educ_exp .description strong {
   color: #1CB698;
@@ -1288,15 +1286,35 @@ footer ::-webkit-input-placeholder {
   border-radius: 50%;
   top: -8px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .resume .education-experience {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     max-width: 1600px;
-
-    
+  }
+  .resume .education-experience .element-experience span::after {
+    right: 80%;
+  }
+  .resume .education-experience .element-education {
+    border-right: 2px solid #1CB698;
+  }
+  .resume .education-experience .element-education span::after {
+    right: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  .resume .education-experience {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    max-width: 1600px;
+  }
+  .resume .education-experience .element-experience {
+    min-height: 200px;
+    max-height: 200px;
   }
   .resume .education-experience .element-experience span::after {
     right: 80%;
@@ -1312,15 +1330,7 @@ footer ::-webkit-input-placeholder {
   transition: 0.5s all ease-in-out;
   transform: translateY(100%);
   opacity: 0;
-
   z-index: -1;
-}
-@media(max-width:700px){
-.resume .element_educ_exp{
-  min-height: 300px;;
-  
-
-}
 }
 .resume .element_educ_exp:nth-child(2) {
   transition-delay: 0.5s;
@@ -1450,7 +1460,7 @@ footer ::-webkit-input-placeholder {
     margin: auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .projects .project-type {
     max-width: 1600px;
   }
@@ -1463,8 +1473,18 @@ footer ::-webkit-input-placeholder {
   .projects .container-projects .project {
     width: 100%;
   }
+  .projects .project .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projects .project .info p {
+    height: 50px;
+    line-height: 30px;
+  }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1400px) {
   .projects .container-projects {
     grid-template-columns: repeat(3, 1fr);
   }

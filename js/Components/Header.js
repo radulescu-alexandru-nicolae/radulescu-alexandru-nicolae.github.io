@@ -19,14 +19,14 @@ export default class Header{
         </figure>
         <article class="text">
             <h1>Radulescu Alexandru</h1>
-            <p>Full stack web developer</p>
+            <p>Back-End Developer</p>
         </article>
         <ul>
             <li><a href="https://www.facebook.com/Alexandru432/" target="_blank"><i class="fab fa-facebook-f"></i></i></a></i>
             </li>
             <li><a href="https://github.com/radulescu-alexandru-nicolae" target="_blank"><i class="fab fa-github"></i></a></li>
             
-            <li><a href=""><i class="fab fa-skype"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/radulescu-alexandru-a20b45229/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </section>
         `;

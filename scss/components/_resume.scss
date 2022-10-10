@@ -137,7 +137,37 @@
         
         
             & .element-experience{
+                & span{
+                    &::after{
+                        right:80%;
+    
+                    }
+                }
+               
+            }
+            & .element-education{
+                border-right: 2px solid $color-green;
+    
+                & span{
+                    &::after{
+                        right:80%;
+                    }
+                }
+        }
+    }
 
+
+    }
+    @include mq('exlg'){
+        .education-experience{
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 60px;
+            max-width: 1600px;
+            & .element-experience{
+                min-height: 200px;
+                max-height: 200px;
                 & span{
                     &::after{
                         right:80%;

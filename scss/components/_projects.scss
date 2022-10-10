@@ -138,6 +138,21 @@
                 width: 100%;
             }
         }
+
+        & .project{
+            & .info{
+                text-align: center;
+                @include flexy($dir:column ,$just:center);
+             
+           & p{
+            height: 50px;
+            line-height: 30px;
+           }
+
+                
+            }
+        }
+        
    }
 
    @include mq('exlg'){
