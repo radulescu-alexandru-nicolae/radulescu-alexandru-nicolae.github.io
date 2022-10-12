@@ -18,10 +18,9 @@ export default class Main{
             <span></span>
         </article>
         <article class="description">
-            <p><strong>Hello!My name is Radulescu Alexandru and currently I'm student in the fourth
-            year at Calculatoare,Automatica si Informatica Aplicata from Craiova.I'm
-            an oppen minde persona who is eager to learn new things and develope
-            new skills.
+            <p><strong>Hello!My name is Radulescu Alexandru</strong> and currently I'm student in the third year at
+            Calculatoare,Automatica si Informatica Aplicata from Craiova.I'm an oppen
+            mind persona who is eager to learn new things and develope new skills.
             </p>
         </article>
         <article class="personal-interests">
