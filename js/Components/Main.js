@@ -77,7 +77,7 @@ export default class Main{
             </ul>
         </article>  
         </article>
-    <a href="/cv/CV.pdf" download="CV">
+    <a href="/cv/CV - Radulescu Alexandru.pdf" download="CV">
         <p>Download CV</p>
         <i class="fas fa-download"></i>
     </a>
