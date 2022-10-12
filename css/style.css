@@ -1214,6 +1214,7 @@ footer ::-webkit-input-placeholder { /* Edge */
 }
 .resume .educ_exp .container-education .element-education {
   width: 95%;
+  overflow: scroll;
 }
 .resume .educ_exp .container-experience {
   border-left: 1px solid #252A2E;
@@ -1285,6 +1286,18 @@ footer ::-webkit-input-placeholder { /* Edge */
   background-color: #1CB698;
   border-radius: 50%;
   top: -8px;
+}
+@media (min-width: 800px) {
+  .resume .educ_exp .container-education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border-right: 1px solid #252A2E;
+  }
+  .resume .educ_exp .container-education .element-education {
+    width: 95%;
+    overflow: unset;
+  }
 }
 @media (min-width: 1200px) {
   .resume .education-experience {

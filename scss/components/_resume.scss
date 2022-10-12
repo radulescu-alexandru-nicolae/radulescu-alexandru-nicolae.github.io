@@ -41,6 +41,7 @@
             border-right:1px solid #252A2E;
             & .element-education{
                 width: 95%;
+                overflow: scroll;
             }
         }
         & .container-experience{
@@ -126,7 +127,20 @@
             }
         
         }
-
+        @include mq('med'){
+            & .educ_exp{
+                & .container-education{
+        
+                    @include flexy($dir:column);
+                    row-gap: 40px;
+                    border-right:1px solid #252A2E;
+                    & .element-education{
+                        width: 95%;
+                        overflow: unset;
+                    }
+                }
+        }
+    }
     @include mq('lg'){
         .education-experience{
             margin:auto;
