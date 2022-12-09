@@ -579,15 +579,12 @@ animatie_resume_elemente();
 
             projectAnimation();
         }
-        // else if(window.scrollY>=contact.offsetTop-180&&window.scrollY<=contact.offsetTop){
-        //     contactAnimation();
-        // }
     
     
     });
 
     }
-    
+  
   
 
 }
