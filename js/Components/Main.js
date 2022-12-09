@@ -18,9 +18,7 @@ export default class Main{
             <span></span>
         </article>
         <article class="description">
-            <p><strong>Hello!My name is Radulescu Alexandru</strong> and currently I'm student in the third year at
-            Calculatoare,Automatica si Informatica Aplicata from Craiova.I'm an oppen
-            mind persona who is eager to learn new things and develope new skills.
+            <p><strong>Hello! My name is Radulescu Alexandru</strong> and I am currently a student in the fourth year of Computers, Automation, and Applied Informatics at Craiova. I am an open mind person who is eager to learn new things and develop new skills.
             </p>
         </article>
         <article class="personal-interests">
@@ -220,7 +218,7 @@ export default class Main{
             <article class="container-education">
                 <div class="element-education element_educ_exp">
                     <div class="description">
-                        <h4>Liceul teoretic <strong>Henri Coanda</strong></h4>
+                        <h4>Theoretic High School <strong>Henri Coanda</strong></h4>
                         <p><strong>2015-2019</strong></p>
                         <p>
                         I studied the bio-chemistry profile and I managed to take the baccalaureate exam successfully. Here I learned how to work in a team and how to interact with other people.  </p>
@@ -231,7 +229,10 @@ export default class Main{
                 <div class="description">
                     <h4>Automatica si Informatica Aplicata la <strong>UCV University</strong></h4>
                     <p><strong>2019-2023</strong></p>
-                    <p>I'm still a studente here and in the past years I could understand what I want to do.Due to this University I learned what this field means,and how to learne by myself.I grew up a lot here due to projects we had or the summer practice where we could work with a profesor on a certain domein.
+                    <p>I'm still a student here and in the past years, I could understand what I want to do. Due to this University, I learned what this field means, and how to learn by myself. I grew up a lot here due to projects we had or the summer practice where we could work with a professor on a certain domain.
+
+                   
+
                     </div>
                 <span></span>  
             </div>
@@ -247,7 +248,9 @@ export default class Main{
                     <div class="description">
                         <h4>Back-end developer at <strong>BRD</strong></h4>
                         <p><strong>01/03/2022 - Current</strong></p>
-                        <p>I'm working as a backend developer at BRD where I use <strong>Java</strong> and <strong>Spring</strong> for creating microservices.I learned at a minimum level how to work with <strong>Jenkins</strong> and <strong>OpenShift</strong>
+                        <p>I am working as a Junior Back-end Developer at BRD where I use <strong>Java</strong> wi
+                        th <strong>Spring</strong> (spring cloud, spring boot, spring data) as a framework for
+                        creating microservices. I learned at a minimum level how to work with <strong>Jenkins</strong> and <strong>OpenShift</strong>. I am working with MYSQL and Maven.</strong>
                         </p>
                     </div>
                     <span></span>  
@@ -257,7 +260,7 @@ export default class Main{
                     <div class="description">
                         <h4>Intership at <strong>OSF Digital</strong></h4>
                         <p><strong>2021 - 1 month</strong></p>
-                        <p>I participated in a one-month internship at OSF where I worked with <strong>NodeJs</strong> , <strong>HTML</strong>,<strong>CSS</strong>,<strong>JavaScript</strong> for creating a basic EComerce website.</p>
+                        <p>I participated in a one-month internship at OSF where I worked with <strong>NodeJs</strong> , <strong>HTML</strong>,<strong>CSS</strong>,<strong>JavaScript</strong> for creating a basic ECommerce website</p>
                     </div>
                     <span></span>  
                 </div>
